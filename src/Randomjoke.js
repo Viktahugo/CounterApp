@@ -1,17 +1,9 @@
 import react,{useEffect} from 'react'
 
-const options = {
-	method: 'GET',
-	headers: {
-		Authorization: 'chrnMsqPx8Ww',
-		'X-RapidAPI-Key': 'd588ad86a1mshe08e4942cd8e224p1cb810jsn28180f0c065f',
-		'X-RapidAPI-Host': 'random-stuff-api.p.rapidapi.com'
-	}
-};
 	
 function Randomjoke() {
     useEffect( () => {  
-        fetch('https://random-stuff-api.p.rapidapi.com/reddit/FetchRandomPost?searchType=hot', options)
+        fetch('https://api.chucknorris.io/jokes/random')
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
