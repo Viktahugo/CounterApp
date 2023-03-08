@@ -4,6 +4,7 @@ import './index.css';
 import  App from './App.js';
 import Sidebar from './Sidebar.js'
 import LeftCard from './LeftCard.js'
+import Randomjoke from './Randomjoke.js'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,7 @@ root.render(
   <React.StrictMode>
     <App />
     <LeftCard />
+    <Randomjoke />  
     <Sidebar />
     <Sidebar
       name="Google Home"
