@@ -22,8 +22,11 @@ function LeftCard() {
         });
         fetchDadJoke();
     },[])
-
-
+    const generateJoke = (e) =>
+    {
+        e.preventDefault();
+        
+    }
     return (
     
    <div className="container my-5">
@@ -42,7 +45,7 @@ function LeftCard() {
                             <p>Category: {punchline}</p> 
                             <p>Type: {type} </p>
                             <p>Joke ID: {id}</p>
-                             <button color="success" className="font-weight-bold">Lorem Ipsum</button>
+                             <button onClick={generateJoke}>Generate</button>
                         </div>
             </div>
     </div>
