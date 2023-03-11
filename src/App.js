@@ -2,6 +2,7 @@ import react,{useState} from 'react'
 import Sidebar from './Sidebar.js'
 import LeftCard from './LeftCard.js'
 import Randomjoke from './Randomjoke.js'
+import Header from './Header.js'
 
 
 
@@ -9,6 +10,7 @@ function App() {
   const [Counter,setCounter] = useState(0);
   return (
     <div class="container my-5">
+      <Header />
   <div class="row">
     <div class="col-md-4">
       <div className="card text-center my-5">
