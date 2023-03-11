@@ -1,11 +1,16 @@
 import react,{useState} from 'react'
+import Sidebar from './Sidebar.js'
+import LeftCard from './LeftCard.js'
+import Randomjoke from './Randomjoke.js'
 
 
 
 function App() {
   const [Counter,setCounter] = useState(0);
   return (
-    <div className="container my-5">
+    <div class="container my-5">
+  <div class="row">
+    <div class="col-md-4">
       <div className="card text-center my-5">
         <div className="card-body">
           <h1> Counter App </h1>
@@ -37,6 +42,16 @@ function App() {
         </div>
       </div>
     </div>
+
+    <div class="col">
+      <Randomjoke />
+    </div>
+    <div class="col">
+        <LeftCard />
+    </div>
+  </div>
+</div>
+
   );
 }
 
